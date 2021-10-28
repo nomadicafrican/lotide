@@ -1,6 +1,10 @@
-const middle = (inputArray) => {
-  const middleArray = [];
-  if (inputArray.length <= 2){
-    return middleArray;  
+const eqArrays = require('./eqArrays');
+
+
+const assertArraysEqual = function (arr1, arr2) {
+  if (eqArrays(arr1, arr2)) {
+    console.log(` ${arr1} === ${arr2}`)
+  } else {
+    console.log(`${arr1} !== ${arr2}`)
   }
 }
