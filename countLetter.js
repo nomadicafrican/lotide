@@ -5,10 +5,16 @@ const assertEqual = function(actual, expected) {
     console.log('❌ this does not match');
   }
 };
-let school = ''
-const countLetters = function(){
-  for (const value of school){
-    console.log(value)
-  }
+const countLetters = function (words){
+  const object = {}
+ for (let i = 0; i < words.length; i ++){
+   let letters = words[i];
+   if (object[letter]) { 
+    obj[letter] ++
+   } else{
+ object[letter] = 1
+   }
+   }
+ 
+return object 
 }
-countLetters("ammar")
