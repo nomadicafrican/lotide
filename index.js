@@ -27,6 +27,7 @@ const eqObjects = require('./eqObjects')
 
 
 
+
 module.exports = {
   head:   head,
   tail:   tail,

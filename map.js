@@ -1,4 +1,4 @@
-const eqArrays = require('./eqArrays');
+
 
 
 
@@ -9,7 +9,7 @@ const words = ["ground", "control", "to", "major", "tom"];
      // arg2 is the callback function
     const result = [] // an empty array to out results in
     for (let item of arg1) {
-    result .push(arg2(item)) 
+    result.push(arg2(item)) 
    return result
     }
   }

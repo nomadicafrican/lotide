@@ -1,15 +1,15 @@
-const countLetters = function (words) {
-  const obj = {} // this is where the letters are stored
-   for (let i =0; i < words.length; i ++) { // looping through the string
-    let letter = words[i]; // declaring letter as each index in the string 
-   if (obj[letter]) { // if statment to see if obj(letter)
-     obj[letter] ++ 
-   }
-   else {
-     obj[letter] = 1
-   }
-   }
- return obj
- } 
- console.log (countLetters("lighthouse in the house"))
-module.exports = countLetters
+const letterPositions = function (sentence){
+  const results = {};
+  for (let index = 0; index < sentence.length; index ++)
+  const initilize = sentence[index]; 
+if (!results[initilize]) {
+  results[initilize] = [index]
+}
+else {
+  results[initilize].push(index);
+}
+
+console.log(results);
+return results;
+};
+module.exports = letterPositions

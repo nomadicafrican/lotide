@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@ammar.kusow/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "lotide assignment",
   "main": "assertArrayEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/nomadicafrican/lotide.git"
   },
-  "author": "",
+  "author": "Ammar Ali <@Ammar.kusow2@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/nomadicafrican/lotide/issues"
