@@ -1,20 +1,16 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log("✅ This does match");
-  } else {
-    console.log('❌ this does not match');
-  }
-};
+
+
 const countLetters = function (words){
-  const object = {}
+  const emparr = {}
  for (let i = 0; i < words.length; i ++){
-   let letters = words[i];
-   if (object[letter]) { 
-    obj[letter] ++
+   let letter = words[i];
+   if (emparr[letter]) { 
+    emparr[letter] ++
    } else{
- object[letter] = 1
+ emparr[letter] = 1
    }
    }
  
-return object 
+return emparr 
 }
+module.exports=countLetters

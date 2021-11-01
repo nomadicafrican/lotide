@@ -1,13 +1,7 @@
 
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log("✅ This does match");
-  } else {
-    console.log('❌ this does not match');
-  }
-};
 
-findKey = function( obj, callback){
+
+let findKey = function( obj, callback){
   
  let theObjectAsAnArray = Object.entries(obj)
  for (let item of theObjectAsAnArray){
@@ -26,3 +20,4 @@ console.log(findKey({
   "Akelarre":  { stars: 3 }
 }, x => x.stars === 2)
 )
+module.exports = findKey

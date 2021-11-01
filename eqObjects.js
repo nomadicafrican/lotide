@@ -1,10 +1,4 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log("✅ This does match");
-  } else {
-    console.log('❌ this does not match');
-  }
-};
+const assertEqual = require('./assertEqual')
 
 const eqObjects = function(obj1,obj2){
    if ( Object.keys(obj1).length !== Object.keys(obj2).length){
@@ -25,3 +19,4 @@ assertEqual(eqObjects(ab,ba) , true); // => true
 
 //const abc = { a: "1", b: "2", c: "3" };
 //eqObjects(ab, abc);
+module.exports=eqObjects

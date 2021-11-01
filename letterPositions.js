@@ -12,3 +12,4 @@ const countLetters = function (words) {
  return obj
  } 
  console.log (countLetters("lighthouse in the house"))
+module.exports = countLetters
