@@ -1,18 +1,16 @@
 // FUNCTION IMPLEMENTATION
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log("✅ This does match");
-  } else {
-    console.log('❌ this does not match');
-  }
-};
+const assertEqual = require('./assertEqual');
+
 
 // TEST CODE
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
+//assertEqual("Lighthouse Labs", "Bootcamp");
+//assertEqual(1, 1);
 
 const head = function(arr){
-  console.log(arr)
+   return arr[0]
+  }
+  // return that index
 
-}
-head([5,6,7])
+
+console.log(head([6,7]))
+module.exports = head
